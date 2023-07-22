@@ -1,0 +1,23 @@
+{
+   "content_scripts": [ {
+      "js": [ "goshafy.js" ],
+      "matches": [ "https://www.youtube.com/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Добавляет в каждое превью на ютубе Гошу (основано на плагине YouTube MrBeastify)",
+   "host_permissions": [ "https://www.youtube.com/*" ],
+   "icons": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "64": "icons/icon-64.png",
+      "96": "icons/icon-96.png"
+   },
+   "manifest_version": 3,
+   "name": "ОГОШИВАТЕЛЬ ЮТУБА",
+   "version": "1.0",
+   "web_accessible_resources": [ {
+      "matches": [ "*://*/*" ],
+      "resources": [ "images/*.png" ]
+   } ]
+}
